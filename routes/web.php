@@ -18,6 +18,16 @@ Route::get('/', function () {
 });
 
 
+Route::get('/inicio','Example@inicio' );
+Route::get('/busca','Example@findId' );
+Route::get('/buscaNombre','Example@findNombre' );
+Route::get('/inserta','Example@insert' );
+Route::get('/actualiza','Example@update' );
+Route::get('/borrar','Example@delete' );
+
+
+
+
 //COMENTARIO
 
 
