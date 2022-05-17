@@ -26,7 +26,7 @@ class EjemploController extends Controller
     }
 
     function find(){
-        $registroId = Ejemplo::find(3);
+        $registroId = Ejemplo::find(10);
         
 
         print_r($registroId->id);
@@ -40,12 +40,12 @@ class EjemploController extends Controller
         //$registro = Ejemplo::where('nombre','Javier Alejandro')->get();
 
         //first() va a devolver solo un bojeto
-        $registro = Ejemplo::where('nombre','Javier Alejandro')->first();
+        $registro = Ejemplo::where('nombre','Javier Morales')->first();
         //Depende de si queremos obtener un registro o varios registros.
         
         print_r($registro->nombre);
 
-        return view('inicio');
+        //return view('inicio');
     }
 
     function registrar(){
@@ -58,20 +58,20 @@ class EjemploController extends Controller
         $obj->save();
         //save() sirve para guardar la informacion en las base de datos
 
-        return view('inicio');
+        
     }
 
-    function actualizar(){
+    function actualiza(){
 
         //buscar registro
-        $obj = Ejemplo::find(4);
+        $obj = Ejemplo::find(5);
 
         //Actualizar registro
         $obj -> nombre = 'Javier Morales';
 
         $obj->save();
 
-        return view('inicio');
+        
     }
 
     function borrar(){
@@ -80,7 +80,7 @@ class EjemploController extends Controller
 
         $obj->delete();
 
-        return view('inicio');
+        
     }
 }
 

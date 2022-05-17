@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\Example;
-use App\ejemplo;
+use App\Ejemplo;
 
 use Illuminate\Http\Request;
 
@@ -17,7 +17,7 @@ class Example extends Controller
 
     public function inicio(){
 
-        $query=ejemplo::all();
+        $query=Ejemplo::all();
 
         $data=[
             'records' => $query
@@ -33,7 +33,7 @@ class Example extends Controller
 
 
     public function findId(){
-        $query=ejemplo::find(4);
+        $query=Ejemplo::find(6);
         
 
             print_r($query->nombre." - ".$query->id);
@@ -45,10 +45,10 @@ class Example extends Controller
 
     public function findNombre(){
 
-        $name = "Javier Alejandro";
+        $name = "Javier Morales";
 
         //$query=ejemplo::where('nombre',$name)->get();//Get retorna varios registros
-        $query=ejemplo::where('nombre',$name)->first();//First retorna un registro
+        $query=Ejemplo::where('nombre',$name)->first();//First retorna un registro
        // print_r($query);
 
        print_r($query->nombre." - ".$query->id);
@@ -60,9 +60,9 @@ class Example extends Controller
 
     public function insert(){
 
-        $obj=new ejemplo();
+        $obj=new Ejemplo();
 
-        $obj->nombre = "Natanael Cano";
+        $obj->nombre = "Natanael Cano Juarez";
 
         $obj->save();//método para ionsertar registros
 
@@ -70,14 +70,14 @@ class Example extends Controller
 
 
     public function update(){
-        $obj=ejemplo::find(3);
-        $obj->nombre = "Jose Francisco Ramirez Alacala"; 
+        $obj=Ejemplo::find(12);
+        $obj->nombre = "Jose Francisco Ramirez Alacala 893"; 
         $obj->save();//
     }
 
 
     public function delete(){
-        $obj=ejemplo::find(11);
+        $obj=Ejemplo::find(10);
         $obj->delete();
     }
 
