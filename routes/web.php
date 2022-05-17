@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\http\Controllers\EjemploController;
+use App\Ejemplo;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +20,18 @@ Route::get('/', function () {
 });
 
 
-//COMENTARIO
+Route::get('inicio','EjemploController@inicio');
+
+Route::get('find','EjemploController@find');
+
+Route::get('nombre','EjemploController@findbyName');
+
+Route::get('registro','EjemploController@registrar');
+
+Route::get('actualiza','EjemploController@actualizar');
+
+Route::get('borrar','EjemploController@borrar');
+
 
 
 
