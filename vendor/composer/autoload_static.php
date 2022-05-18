@@ -468,8 +468,12 @@ class ComposerStaticInit0046cb4d6ec385ca1ccfa65d0d38f9f5
 
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
+        'App\\Ejemplo' => __DIR__ . '/../..' . '/app/Ejemplo.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\EjemploController' => __DIR__ . '/../..' . '/app/Http/Controllers/EjemploController.php',
+        'App\\Http\\Controllers\\Example' => __DIR__ . '/../..' . '/app/Http/Controllers/Example.php',
+        'App\\Http\\Controllers\\MateriasController' => __DIR__ . '/../..' . '/app/Http/Controllers/MateriasController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\CheckForMaintenanceMode' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckForMaintenanceMode.php',

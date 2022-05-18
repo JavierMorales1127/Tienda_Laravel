@@ -7,8 +7,12 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
+    'App\\Ejemplo' => $baseDir . '/app/Ejemplo.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
+    'App\\Http\\Controllers\\EjemploController' => $baseDir . '/app/Http/Controllers/EjemploController.php',
+    'App\\Http\\Controllers\\Example' => $baseDir . '/app/Http/Controllers/Example.php',
+    'App\\Http\\Controllers\\MateriasController' => $baseDir . '/app/Http/Controllers/MateriasController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
     'App\\Http\\Middleware\\CheckForMaintenanceMode' => $baseDir . '/app/Http/Middleware/CheckForMaintenanceMode.php',

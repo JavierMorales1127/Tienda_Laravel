@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\http\Controllers\EjemploController;
+use App\http\Controllers\MateriasController;
 use App\http\Controllers\Example;
 
 use App\Ejemplo;
@@ -31,6 +32,10 @@ Route::get('/actualiza','Example@update' );
 Route::get('/borrar','Example@delete' );
 
 
+
+
+//MATERIAS
+Route::get('/materia','MateriasController@index');
 
 
 //COMENTARIO
